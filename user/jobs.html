@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Find Jobs - JobPortal</title>
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/user.css">
+
+</head>
+
+<body class="user-page">
+
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <a href="../index.html" class="logo">
+            JobPortal
+        </a>
+
+        <nav class="nav">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../jobs.html">
+                Jobs
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="#" class="logout-btn join-btn">
+                Logout
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section class="page-banner">
+
+    <h1>
+        Find Jobs
+    </h1>
+
+    <p>
+        Search and apply for suitable opportunities
+    </p>
+
+</section>
+
+
+<main class="user-main">
+
+    <div class="user-content">
+
+
+        <div class="user-card">
+
+            <form
+                class="search-box"
+                id="userJobSearch">
+
+                <input
+                    type="text"
+                    id="userJobKeyword"
+                    placeholder="Job title or keyword">
+
+                <input
+                    type="text"
+                    id="userJobLocation"
+                    placeholder="Location">
+
+                <select id="userJobType">
+
+                    <option value="">
+                        All Types
+                    </option>
+
+                    <option value="Full Time">
+                        Full Time
+                    </option>
+
+                    <option value="Part Time">
+                        Part Time
+                    </option>
+
+                    <option value="Internship">
+                        Internship
+                    </option>
+
+                </select>
+
+                <button
+                    type="submit">
+                    Search
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="user-job-list" id="userJobList">
+
+
+            <article
+                class="user-job-card"
+                data-title="Frontend Developer"
+                data-location="Pune"
+                data-type="Full Time">
+
+                <h3>
+                    Frontend Developer
+                </h3>
+
+                <div class="user-job-company">
+                    Tech Solutions Pvt. Ltd.
+                </div>
+
+                <div class="user-job-meta">
+
+                    <span>📍 Pune</span>
+
+                    <span>💼 Full Time</span>
+
+                    <span>💰 ₹3 - ₹5 LPA</span>
+
+                </div>
+
+                <p>
+                    Develop responsive websites using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <br>
+
+                <div class="user-job-actions">
+
+                    <a
+                        href="job-details.html?id=1"
+                        class="primary-btn">
+                        View Details
+                    </a>
+
+                    <button
+                        class="save-btn save-job"
+                        data-job="1">
+                        ♡ Save Job
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="user-job-card"
+                data-title="Java Developer"
+                data-location="Mumbai"
+                data-type="Full Time">
+
+                <h3>
+                    Java Developer
+                </h3>
+
+                <div class="user-job-company">
+                    Software World
+                </div>
+
+                <div class="user-job-meta">
+
+                    <span>📍 Mumbai</span>
+
+                    <span>💼 Full Time</span>
+
+                    <span>💰 ₹4 - ₹7 LPA</span>
+
+                </div>
+
+                <p>
+                    Develop and maintain Java-based
+                    software applications.
+                </p>
+
+                <br>
+
+                <div class="user-job-actions">
+
+                    <a
+                        href="job-details.html?id=2"
+                        class="primary-btn">
+                        View Details
+                    </a>
+
+                    <button
+                        class="save-btn save-job"
+                        data-job="2">
+                        ♡ Save Job
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="user-job-card"
+                data-title="Python Developer"
+                data-location="Pune"
+                data-type="Internship">
+
+                <h3>
+                    Python Developer
+                </h3>
+
+                <div class="user-job-company">
+                    Digital India Tech
+                </div>
+
+                <div class="user-job-meta">
+
+                    <span>📍 Pune</span>
+
+                    <span>💼 Internship</span>
+
+                    <span>💰 ₹15,000 / Month</span>
+
+                </div>
+
+                <p>
+                    Python internship opportunity for
+                    students interested in programming.
+                </p>
+
+                <br>
+
+                <div class="user-job-actions">
+
+                    <a
+                        href="job-details.html?id=3"
+                        class="primary-btn">
+                        View Details
+                    </a>
+
+                    <button
+                        class="save-btn save-job"
+                        data-job="3">
+                        ♡ Save Job
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="user-job-card"
+                data-title="Web Designer"
+                data-location="Kolhapur"
+                data-type="Part Time">
+
+                <h3>
+                    Web Designer
+                </h3>
+
+                <div class="user-job-company">
+                    Creative Web Studio
+                </div>
+
+                <div class="user-job-meta">
+
+                    <span>📍 Kolhapur</span>
+
+                    <span>💼 Part Time</span>
+
+                    <span>💰 ₹20,000 / Month</span>
+
+                </div>
+
+                <p>
+                    Design responsive and attractive
+                    websites for clients.
+                </p>
+
+                <br>
+
+                <div class="user-job-actions">
+
+                    <a
+                        href="job-details.html?id=4"
+                        class="primary-btn">
+                        View Details
+                    </a>
+
+                    <button
+                        class="save-btn save-job"
+                        data-job="4">
+                        ♡ Save Job
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="../assets/js/user.js"></script>
+
+<script>
+document.getElementById("userJobSearch").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const keyword =
+        document.getElementById("userJobKeyword").value.toLowerCase();
+
+    const location =
+        document.getElementById("userJobLocation").value.toLowerCase();
+
+    const type =
+        document.getElementById("userJobType").value.toLowerCase();
+
+    const jobs =
+        document.querySelectorAll(".user-job-card");
+
+    jobs.forEach(function(job) {
+
+        const title =
+            job.dataset.title.toLowerCase();
+
+        const jobLocation =
+            job.dataset.location.toLowerCase();
+
+        const jobType =
+            job.dataset.type.toLowerCase();
+
+        const matchKeyword =
+            !keyword || title.includes(keyword);
+
+        const matchLocation =
+            !location || jobLocation.includes(location);
+
+        const matchType =
+            !type || jobType === type;
+
+        job.style.display =
+            matchKeyword && matchLocation && matchType
+            ? "block"
+            : "none";
+
+    });
+
+});
+</script>
+
+</body>
+</html>

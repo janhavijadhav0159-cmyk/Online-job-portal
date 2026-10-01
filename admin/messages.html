@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Messages - Admin</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+    <div class="admin-header-logo">JobPortal</div>
+
+    <div class="admin-header-right">
+
+        <span>Admin</span>
+
+        <button class="admin-logout-btn" id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-sidebar">
+
+        <h2>Admin Panel</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="employers.html">Employers</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="categories.html">Categories</a>
+        <a href="reports.html">Reports</a>
+        <a href="messages.html" class="active">Messages</a>
+        <a href="profile.html">Profile</a>
+
+    </aside>
+
+
+    <main class="admin-content">
+
+        <h1>Messages</h1>
+
+        <p class="page-description">
+            Messages received from website visitors.
+        </p>
+
+
+        <div id="messagesList" class="messages-list">
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../assets/js/admin.js"></script>
+
+</body>
+</html>

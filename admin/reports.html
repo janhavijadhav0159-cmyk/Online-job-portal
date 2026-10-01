@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports - Admin</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+    <div class="admin-header-logo">JobPortal</div>
+
+    <div class="admin-header-right">
+
+        <span>Admin</span>
+
+        <button class="admin-logout-btn" id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-sidebar">
+
+        <h2>Admin Panel</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="employers.html">Employers</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="categories.html">Categories</a>
+        <a href="reports.html" class="active">Reports</a>
+        <a href="messages.html">Messages</a>
+        <a href="profile.html">Profile</a>
+
+    </aside>
+
+
+    <main class="admin-content">
+
+        <h1>Reports</h1>
+
+        <p class="page-description">
+            Overview of Online Job Portal statistics.
+        </p>
+
+
+        <div class="report-grid">
+
+            <div class="report-card">
+
+                <h3>Registered Users</h3>
+
+                <strong id="reportUsers">
+                    0
+                </strong>
+
+                <p>
+                    Total job seekers
+                </p>
+
+            </div>
+
+
+            <div class="report-card">
+
+                <h3>Registered Employers</h3>
+
+                <strong id="reportEmployers">
+                    0
+                </strong>
+
+                <p>
+                    Total companies
+                </p>
+
+            </div>
+
+
+            <div class="report-card">
+
+                <h3>Posted Jobs</h3>
+
+                <strong id="reportJobs">
+                    0
+                </strong>
+
+                <p>
+                    Total job vacancies
+                </p>
+
+            </div>
+
+
+            <div class="report-card">
+
+                <h3>Applications</h3>
+
+                <strong id="reportApplications">
+                    0
+                </strong>
+
+                <p>
+                    Total applications
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="report-card wide-report">
+
+            <h2>Job Statistics</h2>
+
+            <div id="jobReportText">
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../assets/js/admin.js"></script>
+
+</body>
+</html>

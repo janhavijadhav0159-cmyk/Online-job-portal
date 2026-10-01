@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employer Dashboard - Job Portal</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/employer.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        JobPortal
+    </div>
+
+    <div class="dashboard-right">
+
+        <span>
+            Welcome, <strong id="dashboardEmployerName">Employer</strong>
+        </span>
+
+        <button class="logout-btn" onclick="employerLogout()">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h2>Employer Panel</h2>
+
+        <a href="dashboard.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="profile.html">
+            Company Profile
+        </a>
+
+        <a href="post-job.html">
+            Post Job
+        </a>
+
+        <a href="jobs.html">
+            My Jobs
+        </a>
+
+        <a href="applications.html">
+            Applications
+        </a>
+
+        <a href="../index.html">
+            Main Website
+        </a>
+
+    </aside>
+
+
+    <main class="dashboard-content">
+
+        <h1>Employer Dashboard</h1>
+
+        <p class="page-description">
+            Manage your company, jobs and applications.
+        </p>
+
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3>Total Jobs</h3>
+                <strong id="totalJobs">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <h3>Active Jobs</h3>
+                <strong id="activeJobs">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <h3>Applications</h3>
+                <strong id="totalApplications">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <h3>Company Profile</h3>
+                <strong>✓</strong>
+            </div>
+
+        </div>
+
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>Quick Actions</h2>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+                <a href="post-job.html" class="action-card">
+                    <span>+</span>
+                    <h3>Post New Job</h3>
+                    <p>Create a new job vacancy.</p>
+                </a>
+
+
+                <a href="jobs.html" class="action-card">
+                    <span>📋</span>
+                    <h3>Manage Jobs</h3>
+                    <p>View and manage your jobs.</p>
+                </a>
+
+
+                <a href="applications.html" class="action-card">
+                    <span>👤</span>
+                    <h3>Applications</h3>
+                    <p>Check received applications.</p>
+                </a>
+
+
+                <a href="profile.html" class="action-card">
+                    <span>🏢</span>
+                    <h3>Company Profile</h3>
+                    <p>Update company information.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-section">
+
+            <h2>Recent Jobs</h2>
+
+            <div id="recentJobs" class="job-list">
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../assets/js/employer.js"></script>
+
+</body>
+</html>

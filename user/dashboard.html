@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>User Dashboard - JobPortal</title>
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/user.css">
+
+</head>
+
+<body class="user-page">
+
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <a href="../index.html" class="logo">
+            JobPortal
+        </a>
+
+        <nav class="nav">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../jobs.html">
+                Jobs
+            </a>
+
+            <a href="../companies.html">
+                Companies
+            </a>
+
+            <a href="../contact.html">
+                Contact
+            </a>
+
+            <a href="#" class="logout-btn join-btn">
+                Logout
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="user-main">
+
+    <div class="user-grid">
+
+
+        <aside class="user-sidebar">
+
+            <div class="user-info">
+
+                <div class="user-avatar">
+                    J
+                </div>
+
+                <h3>
+                    Job Seeker
+                </h3>
+
+                <p>
+                    jobseeker@example.com
+                </p>
+
+            </div>
+
+
+            <ul class="user-menu">
+
+                <li>
+                    <a href="dashboard.html" class="active">
+                        🏠 Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        👤 My Profile
+                    </a>
+                </li>
+
+                <li>
+                    <a href="jobs.html">
+                        🔎 Find Jobs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="applications.html">
+                        📄 Applications
+                    </a>
+                </li>
+
+                <li>
+                    <a href="saved-jobs.html">
+                        ❤️ Saved Jobs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html">
+                        📑 My Resume
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="logout-btn">
+                        🚪 Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <section class="user-content">
+
+            <div class="dashboard-title">
+
+                <h1>
+                    Welcome Back!
+                </h1>
+
+                <p>
+                    Manage your job search from your dashboard.
+                </p>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <span>
+                        🔎
+                    </span>
+
+                    <h3>
+                        24
+                    </h3>
+
+                    <p>
+                        Available Jobs
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span>
+                        📄
+                    </span>
+
+                    <h3>
+                        5
+                    </h3>
+
+                    <p>
+                        Applications
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span>
+                        ❤️
+                    </span>
+
+                    <h3>
+                        8
+                    </h3>
+
+                    <p>
+                        Saved Jobs
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span>
+                        🏢
+                    </span>
+
+                    <h3>
+                        15
+                    </h3>
+
+                    <p>
+                        Companies
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="user-card">
+
+                <h2>
+                    Recommended Jobs
+                </h2>
+
+
+                <div class="user-job-list">
+
+
+                    <article class="user-job-card">
+
+                        <h3>
+                            Frontend Developer
+                        </h3>
+
+                        <div class="user-job-company">
+                            Tech Solutions Pvt. Ltd.
+                        </div>
+
+                        <div class="user-job-meta">
+
+                            <span>📍 Pune</span>
+
+                            <span>💼 Full Time</span>
+
+                            <span>💰 ₹3 - ₹5 LPA</span>
+
+                        </div>
+
+                        <div class="user-job-actions">
+
+                            <a
+                                href="job-details.html?id=1"
+                                class="primary-btn">
+                                View Job
+                            </a>
+
+                            <button
+                                class="save-btn save-job"
+                                data-job="1">
+                                ♡ Save Job
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="user-job-card">
+
+                        <h3>
+                            Python Developer
+                        </h3>
+
+                        <div class="user-job-company">
+                            Digital India Tech
+                        </div>
+
+                        <div class="user-job-meta">
+
+                            <span>📍 Pune</span>
+
+                            <span>💼 Internship</span>
+
+                            <span>💰 ₹15,000 / Month</span>
+
+                        </div>
+
+                        <div class="user-job-actions">
+
+                            <a
+                                href="job-details.html?id=3"
+                                class="primary-btn">
+                                View Job
+                            </a>
+
+                            <button
+                                class="save-btn save-job"
+                                data-job="3">
+                                ♡ Save Job
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<script src="../assets/js/user.js"></script>
+
+</body>
+</html>

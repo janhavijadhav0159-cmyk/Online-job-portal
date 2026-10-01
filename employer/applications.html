@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Applications - Job Portal</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/employer.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        JobPortal
+    </div>
+
+    <div class="dashboard-right">
+
+        <span>
+            <strong id="applicationsEmployerName">
+                Employer
+            </strong>
+        </span>
+
+        <button class="logout-btn" onclick="employerLogout()">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h2>Employer Panel</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="profile.html">Company Profile</a>
+
+        <a href="post-job.html">Post Job</a>
+
+        <a href="jobs.html">My Jobs</a>
+
+        <a href="applications.html" class="active">
+            Applications
+        </a>
+
+    </aside>
+
+
+    <main class="dashboard-content">
+
+        <h1>Job Applications</h1>
+
+        <p class="page-description">
+            View applications received for your jobs.
+        </p>
+
+
+        <div class="table-card">
+
+            <table class="data-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Applicant</th>
+
+                        <th>Job</th>
+
+                        <th>Email</th>
+
+                        <th>Date</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="applicationsTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../assets/js/employer.js"></script>
+
+</body>
+</html>

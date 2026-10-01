@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Jobs - Job Portal</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/employer.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        JobPortal
+    </div>
+
+    <div class="dashboard-right">
+
+        <span>
+            <strong id="jobsEmployerName">Employer</strong>
+        </span>
+
+        <button class="logout-btn" onclick="employerLogout()">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h2>Employer Panel</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="profile.html">Company Profile</a>
+
+        <a href="post-job.html">Post Job</a>
+
+        <a href="jobs.html" class="active">
+            My Jobs
+        </a>
+
+        <a href="applications.html">Applications</a>
+
+    </aside>
+
+
+    <main class="dashboard-content">
+
+        <div class="page-title-row">
+
+            <div>
+
+                <h1>My Jobs</h1>
+
+                <p class="page-description">
+                    Manage all your posted jobs.
+                </p>
+
+            </div>
+
+            <a href="post-job.html" class="primary-btn link-btn">
+                + Post New Job
+            </a>
+
+        </div>
+
+
+        <div id="employerJobs" class="job-list">
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../assets/js/employer.js"></script>
+
+</body>
+</html>

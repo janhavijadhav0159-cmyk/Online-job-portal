@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Categories - Admin</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+    <div class="admin-header-logo">JobPortal</div>
+
+    <div class="admin-header-right">
+
+        <span>Admin</span>
+
+        <button class="admin-logout-btn" id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-sidebar">
+
+        <h2>Admin Panel</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="employers.html">Employers</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="categories.html" class="active">
+            Categories
+        </a>
+        <a href="reports.html">Reports</a>
+        <a href="messages.html">Messages</a>
+        <a href="profile.html">Profile</a>
+
+    </aside>
+
+
+    <main class="admin-content">
+
+        <h1>Job Categories</h1>
+
+        <p class="page-description">
+            Add and manage job categories.
+        </p>
+
+
+        <div class="category-form-card">
+
+            <form id="categoryForm">
+
+                <input
+                    type="text"
+                    id="categoryName"
+                    placeholder="Enter category name"
+                    required
+                >
+
+                <button type="submit" class="admin-btn small-btn">
+                    Add Category
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="category-grid" id="categoryList">
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../assets/js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Profile - Job Portal</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/employer.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        JobPortal
+    </div>
+
+    <div class="dashboard-right">
+
+        <span>
+            <strong id="profileEmployerName">Employer</strong>
+        </span>
+
+        <button class="logout-btn" onclick="employerLogout()">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h2>Employer Panel</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="profile.html" class="active">
+            Company Profile
+        </a>
+
+        <a href="post-job.html">Post Job</a>
+
+        <a href="jobs.html">My Jobs</a>
+
+        <a href="applications.html">Applications</a>
+
+    </aside>
+
+
+    <main class="dashboard-content">
+
+        <h1>Company Profile</h1>
+
+        <p class="page-description">
+            Update your company information.
+        </p>
+
+
+        <div class="form-card">
+
+            <form id="employerProfileForm">
+
+                <div class="two-column">
+
+                    <div class="form-group">
+
+                        <label>Company Name</label>
+
+                        <input
+                            type="text"
+                            id="profileCompanyName"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Employer Name</label>
+
+                        <input
+                            type="text"
+                            id="profileName"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="two-column">
+
+                    <div class="form-group">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="profileEmail"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Phone</label>
+
+                        <input
+                            type="tel"
+                            id="profilePhone"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Company Website</label>
+
+                    <input
+                        type="url"
+                        id="profileWebsite"
+                        placeholder="https://example.com"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Company Location</label>
+
+                    <input
+                        type="text"
+                        id="profileLocation"
+                        placeholder="Enter company location"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Company Description</label>
+
+                    <textarea
+                        id="profileDescription"
+                        rows="6"
+                        placeholder="Write about your company"
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="primary-btn">
+                    Save Profile
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../assets/js/employer.js"></script>
+
+</body>
+</html>

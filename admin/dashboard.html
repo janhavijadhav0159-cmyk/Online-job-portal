@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - Job Portal</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+    <div class="admin-header-logo">
+        JobPortal
+    </div>
+
+    <div class="admin-header-right">
+
+        <span>
+            Welcome, <strong>Admin</strong>
+        </span>
+
+        <button class="admin-logout-btn" id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-sidebar">
+
+        <h2>Admin Panel</h2>
+
+        <a href="dashboard.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="users.html">
+            Users
+        </a>
+
+        <a href="employers.html">
+            Employers
+        </a>
+
+        <a href="jobs.html">
+            Jobs
+        </a>
+
+        <a href="applications.html">
+            Applications
+        </a>
+
+        <a href="categories.html">
+            Categories
+        </a>
+
+        <a href="reports.html">
+            Reports
+        </a>
+
+        <a href="messages.html">
+            Messages
+        </a>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+        <a href="../index.html">
+            Main Website
+        </a>
+
+    </aside>
+
+
+    <main class="admin-content">
+
+        <h1>Admin Dashboard</h1>
+
+        <p class="page-description">
+            Manage the Online Job Portal.
+        </p>
+
+
+        <div class="admin-stats">
+
+            <div class="admin-stat-card">
+                <div class="stat-icon">👤</div>
+
+                <div>
+                    <h3>Total Users</h3>
+                    <strong id="dashboardUsers">0</strong>
+                </div>
+            </div>
+
+
+            <div class="admin-stat-card">
+                <div class="stat-icon">🏢</div>
+
+                <div>
+                    <h3>Total Employers</h3>
+                    <strong id="dashboardEmployers">0</strong>
+                </div>
+            </div>
+
+
+            <div class="admin-stat-card">
+                <div class="stat-icon">💼</div>
+
+                <div>
+                    <h3>Total Jobs</h3>
+                    <strong id="dashboardJobs">0</strong>
+                </div>
+            </div>
+
+
+            <div class="admin-stat-card">
+                <div class="stat-icon">📄</div>
+
+                <div>
+                    <h3>Applications</h3>
+                    <strong id="dashboardApplications">0</strong>
+                </div>
+            </div>
+
+        </div>
+
+
+        <section class="admin-section">
+
+            <div class="section-title-row">
+
+                <h2>Quick Actions</h2>
+
+            </div>
+
+
+            <div class="admin-actions">
+
+                <a href="users.html" class="admin-action-card">
+                    <span>👤</span>
+                    <h3>Manage Users</h3>
+                    <p>View registered job seekers.</p>
+                </a>
+
+
+                <a href="employers.html" class="admin-action-card">
+                    <span>🏢</span>
+                    <h3>Manage Employers</h3>
+                    <p>View company accounts.</p>
+                </a>
+
+
+                <a href="jobs.html" class="admin-action-card">
+                    <span>💼</span>
+                    <h3>Manage Jobs</h3>
+                    <p>View posted jobs.</p>
+                </a>
+
+
+                <a href="reports.html" class="admin-action-card">
+                    <span>📊</span>
+                    <h3>Reports</h3>
+                    <p>View portal statistics.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="admin-section">
+
+            <h2>Recent Jobs</h2>
+
+            <div id="dashboardRecentJobs" class="admin-job-list">
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../assets/js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post Job - Job Portal</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/employer.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        JobPortal
+    </div>
+
+    <div class="dashboard-right">
+
+        <span>
+            <strong id="postJobEmployerName">Employer</strong>
+        </span>
+
+        <button class="logout-btn" onclick="employerLogout()">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h2>Employer Panel</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="profile.html">Company Profile</a>
+
+        <a href="post-job.html" class="active">
+            Post Job
+        </a>
+
+        <a href="jobs.html">My Jobs</a>
+
+        <a href="applications.html">Applications</a>
+
+    </aside>
+
+
+    <main class="dashboard-content">
+
+        <h1>Post New Job</h1>
+
+        <p class="page-description">
+            Add a new job vacancy for job seekers.
+        </p>
+
+
+        <div class="form-card">
+
+            <form id="postJobForm">
+
+                <div class="two-column">
+
+                    <div class="form-group">
+
+                        <label>Job Title</label>
+
+                        <input
+                            type="text"
+                            id="jobTitle"
+                            placeholder="Example: Web Developer"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Category</label>
+
+                        <select id="jobCategory" required>
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="IT">
+                                IT & Software
+                            </option>
+
+                            <option value="Web Development">
+                                Web Development
+                            </option>
+
+                            <option value="Data Science">
+                                Data Science
+                            </option>
+
+                            <option value="Marketing">
+                                Marketing
+                            </option>
+
+                            <option value="Finance">
+                                Finance
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="two-column">
+
+                    <div class="form-group">
+
+                        <label>Location</label>
+
+                        <input
+                            type="text"
+                            id="jobLocation"
+                            placeholder="Example: Pune"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Job Type</label>
+
+                        <select id="jobType" required>
+
+                            <option value="">
+                                Select Job Type
+                            </option>
+
+                            <option value="Full Time">
+                                Full Time
+                            </option>
+
+                            <option value="Part Time">
+                                Part Time
+                            </option>
+
+                            <option value="Internship">
+                                Internship
+                            </option>
+
+                            <option value="Remote">
+                                Remote
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="two-column">
+
+                    <div class="form-group">
+
+                        <label>Salary</label>
+
+                        <input
+                            type="text"
+                            id="jobSalary"
+                            placeholder="Example: ₹3 - ₹5 LPA"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Experience</label>
+
+                        <input
+                            type="text"
+                            id="jobExperience"
+                            placeholder="Example: 0-2 Years"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Job Description</label>
+
+                    <textarea
+                        id="jobDescription"
+                        rows="7"
+                        placeholder="Enter job description"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Required Skills</label>
+
+                    <input
+                        type="text"
+                        id="jobSkills"
+                        placeholder="HTML, CSS, JavaScript"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Application Deadline</label>
+
+                    <input
+                        type="date"
+                        id="jobDeadline"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit" class="primary-btn">
+                    Post Job
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../assets/js/employer.js"></script>
+
+</body>
+</html>

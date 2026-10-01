@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employers - Admin</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+    <div class="admin-header-logo">JobPortal</div>
+
+    <div class="admin-header-right">
+        <span>Admin</span>
+        <button class="admin-logout-btn" id="logoutBtn">
+            Logout
+        </button>
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-sidebar">
+
+        <h2>Admin Panel</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="employers.html" class="active">Employers</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="applications.html">Applications</a>
+        <a href="categories.html">Categories</a>
+        <a href="reports.html">Reports</a>
+        <a href="messages.html">Messages</a>
+        <a href="profile.html">Profile</a>
+
+    </aside>
+
+
+    <main class="admin-content">
+
+        <div class="page-title-row">
+
+            <div>
+
+                <h1>Employers</h1>
+
+                <p class="page-description">
+                    Manage employer accounts.
+                </p>
+
+            </div>
+
+            <input
+                type="search"
+                id="employerSearch"
+                class="search-input"
+                placeholder="Search employers..."
+            >
+
+        </div>
+
+
+        <div class="admin-table-card">
+
+            <table class="admin-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Company</th>
+                        <th>Employer</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="employersTable">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../assets/js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>My Resume - JobPortal</title>
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/user.css">
+
+</head>
+
+<body class="user-page">
+
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <a href="../index.html" class="logo">
+            JobPortal
+        </a>
+
+        <nav class="nav">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="jobs.html">
+                Find Jobs
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="#" class="logout-btn join-btn">
+                Logout
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="user-main">
+
+    <div class="user-grid">
+
+
+        <aside class="user-sidebar">
+
+            <div class="user-info">
+
+                <div class="user-avatar">
+                    J
+                </div>
+
+                <h3>
+                    Job Seeker
+                </h3>
+
+                <p>
+                    jobseeker@example.com
+                </p>
+
+            </div>
+
+
+            <ul class="user-menu">
+
+                <li>
+                    <a href="dashboard.html">
+                        🏠 Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        👤 My Profile
+                    </a>
+                </li>
+
+                <li>
+                    <a href="jobs.html">
+                        🔎 Find Jobs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="applications.html">
+                        📄 Applications
+                    </a>
+                </li>
+
+                <li>
+                    <a href="saved-jobs.html">
+                        ❤️ Saved Jobs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html" class="active">
+                        📑 My Resume
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <section class="user-content">
+
+            <div class="dashboard-title">
+
+                <h1>
+                    My Resume
+                </h1>
+
+                <p>
+                    Create and manage your professional resume.
+                </p>
+
+            </div>
+
+
+            <div class="user-card">
+
+                <form
+                    class="user-form"
+                    id="resumeForm">
+
+
+                    <div class="form-group">
+
+                        <label for="resumeName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="resumeName"
+                            value="Janhavi Jadhav"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="resumeEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="resumeEmail"
+                            value="jobseeker@example.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="resumePhone">
+                            Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="resumePhone"
+                            value="+91 98765 43210">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="resumeEducation">
+                            Education
+                        </label>
+
+                        <input
+                            type="text"
+                            id="resumeEducation"
+                            value="B.Sc Computer Science">
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="resumeSkills">
+                            Skills
+                        </label>
+
+                        <input
+                            type="text"
+                            id="resumeSkills"
+                            value="C, C++, Java, Python, HTML, CSS, JavaScript, MySQL">
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="resumeSummary">
+                            Professional Summary
+                        </label>
+
+                        <textarea id="resumeSummary">Computer Science student interested in web development and software development. Hardworking, disciplined and willing to learn new technologies.</textarea>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="resumeExperience">
+                            Experience / Projects
+                        </label>
+
+                        <textarea id="resumeExperience">File Protection System - Developed a small project focused on protecting important files and data.</textarea>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <button
+                            type="submit"
+                            class="primary-btn">
+                            Save Resume
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <p id="resumeMessage"></p>
+
+            </div>
+
+
+            <div class="user-card">
+
+                <div class="resume-header">
+
+                    <h1>
+                        Janhavi Jadhav
+                    </h1>
+
+                    <p>
+                        B.Sc Computer Science
+                    </p>
+
+                    <p>
+                        jobseeker@example.com |
+                        +91 98765 43210
+                    </p>
+
+                </div>
+
+
+                <div class="resume-section">
+
+                    <h3>
+                        Career Objective
+                    </h3>
+
+                    <p>
+                        To develop my technical skills and
+                        gain practical experience in software
+                        and web development.
+                    </p>
+
+                </div>
+
+
+                <div class="resume-section">
+
+                    <h3>
+                        Education
+                    </h3>
+
+                    <p>
+                        B.Sc Computer Science
+                    </p>
+
+                </div>
+
+
+                <div class="resume-section">
+
+                    <h3>
+                        Technical Skills
+                    </h3>
+
+                    <ul class="resume-list">
+
+                        <li>
+                            C and C++
+                        </li>
+
+                        <li>
+                            Java
+                        </li>
+
+                        <li>
+                            Python
+                        </li>
+
+                        <li>
+                            HTML and CSS
+                        </li>
+
+                        <li>
+                            JavaScript
+                        </li>
+
+                        <li>
+                            MySQL
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="resume-section">
+
+                    <h3>
+                        Project
+                    </h3>
+
+                    <p>
+                        <strong>
+                            File Protection System
+                        </strong>
+                    </p>
+
+                    <p>
+                        A project designed to provide protection
+                        and security for important files and data.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<script src="../assets/js/user.js"></script>
+
+</body>
+</html>
